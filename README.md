@@ -62,6 +62,10 @@ A simple and clean app that helps you download YouTube videos in different quali
 
 - Dio (downloading videos)
 
+- Video Player & Chewie (video playback)
+
+- Permission Handler & Media Store Plus (file saving and storage access)
+
 ---
 
 ## ✅ Conclusion
