@@ -18,9 +18,9 @@ class _SplashPageState extends State<SplashPage> {
   Future<void> _navigateToHome() async {
     await Future.delayed(const Duration(seconds: 2));
     if (mounted) {
-      Navigator.of(
-        context,
-      ).pushReplacement(MaterialPageRoute(builder: (_) => const BottomNavPage()));
+      Navigator.of(context).pushReplacement(
+        MaterialPageRoute(builder: (_) => const BottomNavPage()),
+      );
     }
   }
 

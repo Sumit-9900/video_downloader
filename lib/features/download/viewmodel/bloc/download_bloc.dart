@@ -25,8 +25,6 @@ class DownloadBloc extends Bloc<DownloadEvent, DownloadState> {
       final downloadedVideos =
           await _downloadLocalRepository.getAllDownloadedVideos();
 
-      // log('downloadedVideos: $downloadedVideos');
-
       emit(DownloadSuccess(downloadedVideos));
     } catch (e) {
       emit(DownloadFailure(e.toString()));

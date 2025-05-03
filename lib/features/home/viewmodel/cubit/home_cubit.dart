@@ -25,8 +25,6 @@ class HomeCubit extends Cubit<HomeState> {
         ytClients: [YoutubeApiClient.safari, YoutubeApiClient.androidVr],
       );
 
-      // log('unique: ${unique['360p']!.url}');
-
       final videoStreams = manifest.video;
 
       final uniqueStreams = _deduplicateByQualityLabel(videoStreams);

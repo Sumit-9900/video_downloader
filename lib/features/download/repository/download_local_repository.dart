@@ -1,4 +1,3 @@
-// import 'dart:developer';
 import 'dart:io';
 
 abstract interface class DownloadLocalRepository {
@@ -13,7 +12,6 @@ class DownloadLocalRepositoryImpl implements DownloadLocalRepository {
         '/storage/emulated/0/Download/YouTubeDownloads',
       );
       final isExists = await directory.exists();
-      // log('exists: $isExists');
 
       if (isExists) {
         return directory

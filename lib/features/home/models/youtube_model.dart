@@ -6,7 +6,6 @@ class Youtube {
   final Duration? duration;
   final String videoThumbnail;
   final List<VideoStreamInfo> videoStreams;
-  // final List<MuxedStreamInfo> muxedStreams;
 
   Youtube({
     required this.title,
@@ -14,6 +13,5 @@ class Youtube {
     required this.duration,
     required this.videoThumbnail,
     required this.videoStreams,
-    // required this.muxedStreams,
   });
 }

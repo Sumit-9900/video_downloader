@@ -61,9 +61,8 @@ class _HomePageState extends State<HomePage> {
                   ],
                 ),
               ),
-              const SizedBox(height: 40),
+              const SizedBox(height: 20),
 
-              // Result Section
               BlocBuilder<HomeCubit, HomeState>(
                 builder: (context, state) {
                   if (state is HomeFailure) {
@@ -114,7 +113,7 @@ class _HomePageState extends State<HomePage> {
                           );
                         }),
                         const SizedBox(height: 20),
-                        
+
                         BlocConsumer<HomeDownloadCubit, HomeDownloadState>(
                           listener: (context, downloadState) {
                             if (downloadState is HomeDownloadFailure) {

@@ -30,7 +30,6 @@ final class HomeFailureForDownload extends HomeState {
 final class HomeSuccess extends HomeState {
   final Youtube youtube;
   final VideoStreamInfo? selectedStream;
-  // final MuxedStreamInfo? selectedStream;
   final String? selectedResolution;
   HomeSuccess(this.youtube, {this.selectedStream, this.selectedResolution});
 }
